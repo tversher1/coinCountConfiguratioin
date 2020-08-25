@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+</head>
+<body>
+<div class="container-fluid">
+<div class="container-lg">
+<h2>
+This is a Milnor Coin Count DIP Switch Configurator!
+</h2>
+
+<form id="coinData">
+<div class="container">
+  <div class="row">
+
+<!--Setting Coin counts form-->
+    <div class="col-sm">
+<h4>Coin Counts</h4>
+
+<!--Formula 1-->
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-default">Formula 1 Coin Count</span>
+  </div>
+  <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+</div>
+
+<!--Formula 2-->
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-default">Formula 2 Coin Count</span>
+  </div>
+  <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+</div>
+
+<!--Formula 3-->
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-default">Formula 3 Coin Count</span>
+  </div>
+  <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+</div>
+
+<!--Formula 4-->
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-default">Formula 4 Coin Count</span>
+  </div>
+  <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+</div>
+
+<!--Formula 5-->
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-default">Formula 5 Coin Count</span>
+  </div>
+  <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+</div>
+
+<!--Formula 6-->
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-default">Formula 6 Coin Count</span>
+  </div>
+  <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+</div>
+
+<!--Formula 7-->
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-default">Formula 7 Coin Count</span>
+  </div>
+  <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+</div>
+    </div>
+
+<!--Additional Options-->
+    <div class="col-sm">
+<h4>Addition Options</h4>
+  <div class="form-group">
+    <div class="custom-control custom-switch">
+      <input type="checkbox" class="custom-control-input" id="formulaToggle">
+      <label class="custom-control-label" for="formulaToggle">Formula Set Toggle (OFF for Fomula Set 1 / ON for Formula Set 2</label>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="custom-control custom-switch">
+      <input type="checkbox" checked default-value="true" class="custom-control-input" id="coinCountErrorToggle">
+      <label class="custom-control-label" for="coinCountErrorToggle">Coin Count Error Toggle</label>
+    </div>
+  </div>
+  <button class="btn btn-danger" type="submit">Configure Switches</button>
+    </div>
+  </div>
+</div>
+
+</form>
+<table border="1">
+<tr>
+  <td>
+  <table>
+  <tr><th colspan="2">Dip Switch Set 1<br/>Formula 1</th></tr>
+  <tr><td>S-6</td><td>Off</td></tr>
+  <tr><td>S-5</td><td>Off</td></tr>
+  <tr><td>S-4</td><td>Off</td></tr>
+  <tr><td>S-3</td><td>Off</td></tr>
+  <tr><td>S-2</td><td>Off</td></tr>
+  <tr><td>S-1</td><td>Off</td></tr>
+</table></td>
+  <td>
+  <table>
+  <tr><th colspan="2">Dip Switch Set 2</th></tr>
+  <tr><td>S-6</td><td>Off</td></tr>
+  <tr><td>S-5</td><td>Off</td></tr>
+  <tr><td>S-4</td><td>Off</td></tr>
+  <tr><td>S-3</td><td>Off</td></tr>
+  <tr><td>S-2</td><td>Off</td></tr>
+  <tr><td>S-1</td><td>Off</td></tr>
+</table></td>
+  <td>
+  <table>
+  <tr><th colspan="2">Dip Switch Set 3</th></tr>
+  <tr><td>S-6</td><td>Off</td></tr>
+  <tr><td>S-5</td><td>Off</td></tr>
+  <tr><td>S-4</td><td>Off</td></tr>
+  <tr><td>S-3</td><td>Off</td></tr>
+  <tr><td>S-2</td><td>Off</td></tr>
+  <tr><td>S-1</td><td>Off</td></tr>
+</table></td>
+  <td>
+  <table>
+  <tr><th colspan="2">Dip Switch Set 4</th></tr>
+  <tr><td>S-6</td><td>Off</td></tr>
+  <tr><td>S-5</td><td>Off</td></tr>
+  <tr><td>S-4</td><td>Off</td></tr>
+  <tr><td>S-3</td><td>Off</td></tr>
+  <tr><td>S-2</td><td>Off</td></tr>
+  <tr><td>S-1</td><td>Off</td></tr>
+</table></td>
+  <td>
+  <table>
+  <tr><th colspan="2">Dip Switch Set 5</th></tr>
+  <tr><td>S-6</td><td>Off</td></tr>
+  <tr><td>S-5</td><td>Off</td></tr>
+  <tr><td>S-4</td><td>Off</td></tr>
+  <tr><td>S-3</td><td>Off</td></tr>
+  <tr><td>S-2</td><td>Off</td></tr>
+  <tr><td>S-1</td><td>Off</td></tr>
+</table></td>
+  <td>
+  <table>
+  <tr><th colspan="2">Dip Switch Set 6</th></tr>
+  <tr><td>S-6</td><td>Off</td></tr>
+  <tr><td>S-5</td><td>Off</td></tr>
+  <tr><td>S-4</td><td>Off</td></tr>
+  <tr><td>S-3</td><td>Off</td></tr>
+  <tr><td>S-2</td><td>Off</td></tr>
+  <tr><td>S-1</td><td>Off</td></tr>
+</table></td>
+  <td>
+  <table>
+  <tr><th colspan="2">Dip Switch Set 7</th></tr>
+  <tr><td>S-6</td><td>Off</td></tr>
+  <tr><td>S-5</td><td>Off</td></tr>
+  <tr><td>S-4</td><td>Off</td></tr>
+  <tr><td>S-3</td><td>Off</td></tr>
+  <tr><td>S-2</td><td>Off</td></tr>
+  <tr><td>S-1</td><td>Off</td></tr>
+</table></td>
+</tr>
+</table>
+</div>
+</div>
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
