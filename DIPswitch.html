@@ -4,16 +4,14 @@
 <!-- CSS only -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+<script src="Dec2Bin.js"></script>
 </head>
 <body>
 <div class="container-fluid">
 <div class="container-lg">
-<h2>
-This is a Milnor Coin Count DIP Switch Configurator!
-</h2>
+<h2>This is a Milnor Coin Count DIP Switch Configurator!</h2>
 
-<form id="coinData">
+<form id="coinData" name="coinData">
 <div class="container">
   <div class="row">
 
@@ -26,7 +24,7 @@ This is a Milnor Coin Count DIP Switch Configurator!
   <div class="input-group-prepend">
     <span class="input-group-text" id="inputGroup-sizing-default">Formula 1 Coin Count</span>
   </div>
-  <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+  <input type="number" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" name="coinCount1">
 </div>
 
 <!--Formula 2-->
@@ -34,7 +32,7 @@ This is a Milnor Coin Count DIP Switch Configurator!
   <div class="input-group-prepend">
     <span class="input-group-text" id="inputGroup-sizing-default">Formula 2 Coin Count</span>
   </div>
-  <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+  <input type="number" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" name="coinCount2">
 </div>
 
 <!--Formula 3-->
@@ -42,7 +40,7 @@ This is a Milnor Coin Count DIP Switch Configurator!
   <div class="input-group-prepend">
     <span class="input-group-text" id="inputGroup-sizing-default">Formula 3 Coin Count</span>
   </div>
-  <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+  <input type="number" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" name="coinCount3">
 </div>
 
 <!--Formula 4-->
@@ -50,7 +48,7 @@ This is a Milnor Coin Count DIP Switch Configurator!
   <div class="input-group-prepend">
     <span class="input-group-text" id="inputGroup-sizing-default">Formula 4 Coin Count</span>
   </div>
-  <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+  <input type="number" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" name="coinCount4">
 </div>
 
 <!--Formula 5-->
@@ -58,7 +56,7 @@ This is a Milnor Coin Count DIP Switch Configurator!
   <div class="input-group-prepend">
     <span class="input-group-text" id="inputGroup-sizing-default">Formula 5 Coin Count</span>
   </div>
-  <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+  <input type="number" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" name="coinCount5">
 </div>
 
 <!--Formula 6-->
@@ -66,7 +64,7 @@ This is a Milnor Coin Count DIP Switch Configurator!
   <div class="input-group-prepend">
     <span class="input-group-text" id="inputGroup-sizing-default">Formula 6 Coin Count</span>
   </div>
-  <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+  <input type="number" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" name="coinCount6">
 </div>
 
 <!--Formula 7-->
@@ -74,7 +72,7 @@ This is a Milnor Coin Count DIP Switch Configurator!
   <div class="input-group-prepend">
     <span class="input-group-text" id="inputGroup-sizing-default">Formula 7 Coin Count</span>
   </div>
-  <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+  <input type="number" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" name="coinCount7">
 </div>
     </div>
 
@@ -93,7 +91,7 @@ This is a Milnor Coin Count DIP Switch Configurator!
       <label class="custom-control-label" for="coinCountErrorToggle">Coin Count Error Toggle</label>
     </div>
   </div>
-  <button class="btn btn-danger" type="submit">Configure Switches</button>
+  <button class="btn btn-danger"type="button" onclick="ConfigureSwitches()">Configure Switches</button>
     </div>
   </div>
 </div>
