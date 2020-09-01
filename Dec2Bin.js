@@ -286,7 +286,6 @@ function setSwitch(x){
 
 //sets the configuration for the switches based on the input form coinData
 function ConfigureSwitches(){
-console.log('hello');
 var $machineConfig = [];
 
 //Sets default values for variables that will change.
