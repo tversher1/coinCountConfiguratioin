@@ -5,3 +5,7 @@ This will provide a JS based configuration assistant for the setting the DIP Swi
 
 # This is an ongoing process
 Started Aug 25, 2020
+
+# Version 1.0
+2020.09.01
+This version works. Very basic and does not have any validation features.
