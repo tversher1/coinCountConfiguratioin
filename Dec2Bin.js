@@ -317,6 +317,9 @@ $coinsAfterOffset.length=0;
   console.log($machineConfig.length);
   $machineConfig.every(lowestValue);
   $machineConfig.every(highestValue);
+  if ($highestCoinCount - $lowestCoinCount < 31){
+    return alert ("The coins must be within 31 coins of the highest and lowest values.");
+  }
   console.log("Lowest Value is: " + $lowestCoinCount);
   console.log("Highest Value is: " + $highestCoinCount);
   $offset=setOffset($lowestCoinCount);
